@@ -17,12 +17,66 @@
     <meta name="twitter:site" content="@savourybistro" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root">
+      <div class="min-h-screen flex flex-col items-center justify-start py-12 px-4">
+        <div class="w-full max-w-3xl">
+          <div class="text-center mb-12">
+            <h1 class="font-serif text-5xl font-bold text-burgundy mb-3">Le Savoury Bistro</h1>
+            <div class="separator"></div>
+            <p class="text-gray-600 italic">cuisine française authentique</p>
+          </div>
+
+          <section class="menu-section my-10" id="starters">
+            <h2 class="font-serif text-3xl font-bold mb-6 text-burgundy relative inline-block">
+              Entrées
+              <span class="section-underline"></span>
+            </h2>
+            <ul>
+              <!-- Starters will be populated by JavaScript -->
+            </ul>
+          </section>
+
+          <section class="menu-section my-10" id="mains">
+            <h2 class="font-serif text-3xl font-bold mb-6 text-burgundy relative inline-block">
+              Plats Principaux
+              <span class="section-underline"></span>
+            </h2>
+            <ul>
+              <!-- Main courses will be populated by JavaScript -->
+            </ul>
+          </section>
+
+          <section class="menu-section my-10" id="desserts">
+            <h2 class="font-serif text-3xl font-bold mb-6 text-burgundy relative inline-block">
+              Desserts
+              <span class="section-underline"></span>
+            </h2>
+            <ul>
+              <!-- Desserts will be populated by JavaScript -->
+            </ul>
+          </section>
+
+          <div class="mt-16 text-center">
+            <div class="separator"></div>
+            <p class="text-gray-600 mb-4">Prix nets, service compris.</p>
+            <a 
+              href="contact.html" 
+              class="contact-btn"
+            >
+              Contactez-nous
+            </a>
+            <p class="text-sm text-gray-500 mt-8">
+              © 2025 Le Savoury Bistro - Tous droits réservés
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
